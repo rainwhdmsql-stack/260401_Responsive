@@ -1,0 +1,81 @@
+@import url("reset.css");
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: pink;
+    padding: 20px;
+}
+.card-list{
+    width: 90%;
+    background-color: rgb(124, 84, 84);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card-list li{
+    width: calc((100% - 50px) / 6);
+    padding: 40px 0;
+    background-color: red;
+}
+/* 반응형 */
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+    }
+    .card-list li{
+        width: calc((100% - 30px) / 4);
+    }
+}
+@media (max-width: 480px){
+    .card-list li{
+        width: calc((100% - 10px) / 2);
+    }
+}
+@media (max-width: 390px){
+    .card-list li{
+        width: calc((100%) / 1);
+    }
+}
+/* 혼자 연습 */
+.container-2{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: yellow;
+}
+.card-list-2{
+    margin: auto;
+    width: 90%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.card-list-2 li{
+    padding: 50px 0;
+    width: calc((100% - 45px) / 4);
+    background-color: aquamarine;
+}
+/* 혼자 연습 - 반응형 */
+@media (max-width: 786px){
+    .container-2{
+        width: 90%;
+    }
+    .card-list-2 li{
+        width: calc((100% - 75px) / 6);
+    }
+}
+@media (max-width: 480px){
+    .card-list-2 li{
+        width: calc((100% - 30px) / 3);
+    }
+}
+@media (max-width: 390px){
+    .card-list-2 li{
+        width: calc((100%) / 1);
+    }
+}
+
